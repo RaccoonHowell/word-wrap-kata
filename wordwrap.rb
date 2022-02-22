@@ -1,5 +1,5 @@
 class Wrapper
-    def wrap
-        'hello'
+    def wrap string
+        string
     end
 end
