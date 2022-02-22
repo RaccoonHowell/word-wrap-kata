@@ -1,4 +1,4 @@
-require './wordwrap'
+require "./wordwrap"
 
 describe Wrapper do
     before(:each) do
@@ -8,5 +8,10 @@ describe Wrapper do
     it "can return a string" do
         result = @wrapper.wrap
         expect(result).to eq('hello')
+    end
+
+    it "can return a string that is passed into the function" do
+        esult = @wrapper.wrap('hi')
+        expect(result).to eq('hi')
     end
 end
