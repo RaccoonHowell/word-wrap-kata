@@ -6,7 +6,10 @@ describe Wrapper do
     end
 
     it "can return a string that is passed into the function" do
-        result = @wrapper.wrap("hi")
+        result = @wrapper.wrap(hi)
         expect(result).to eq("hi")
     end
+
+    # it "can return a string nd number that are passed into the function" do
+    #     result = @wrapper.wrap()
 end
