@@ -1,5 +1,5 @@
 class Wrapper
-    def wrap string
-        string
+    def wrap (string, num)
+        string.length > num
     end
 end
