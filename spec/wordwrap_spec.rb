@@ -16,7 +16,7 @@ describe Wrapper do
     end
 
     it "can return the string with line breaks so no line is longer than the number given" do
-        result = @wrapper.wrap("hello world", 7)
+        result = @wrapper.wrap("hello world", 2)
         expect(result). to eq("he\nll\no \nw")
     end
 end
