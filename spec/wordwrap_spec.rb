@@ -9,4 +9,9 @@ describe Wrapper do
         result = @wrapper.wrap("hello world", 2)
         expect(result). to eq("he")
     end
+
+    it "can return a shortened string that includes spaces" do
+        result = @wrapper.wrap("hello world", 7)
+        expect(result). to eq("hello w")
+    end
 end
